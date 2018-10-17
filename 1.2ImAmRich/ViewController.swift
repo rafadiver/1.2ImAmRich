@@ -29,6 +29,18 @@ class ViewController: UIViewController {
         self.ImAmRichLabel.text = "Hello Rafa"
         self.ImAmRichLabel.textColor = UIColor.red
     
+        let controller = UIAlertController(title: "I am Rich", message: """
+                                                    I desrve It,
+                                                    Im am healthy,
+                                                    Im am lucky
+                                                    """, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        controller.addAction(action)
+        
+        self.show(controller, sender: nil)
+        
+        
         
     }
     
