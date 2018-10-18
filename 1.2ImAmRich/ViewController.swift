@@ -33,9 +33,13 @@ class ViewController: UIViewController {
                                                     I desrve It,
                                                     Im am healthy,
                                                     Im am lucky
-                                                    """, preferredStyle: .alert)
+                                                    """, preferredStyle: .actionSheet)
         
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        //let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        
+        let action = UIAlertAction(title: "OK", style: .default) { (action) in
+            print("he pulsado el boton aceptar en el alert")
+        }
         controller.addAction(action)
         
         self.show(controller, sender: nil)
